@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Compile the client",
+    "kind": "Webpack",
+    "file": "./client/scene.tsx",
+    "target": "webworker"
+  },
+  {
+    "name": "Compile the server",
+    "kind": "TSC",
+    "config": "./server/tsconfig.json"
+  }
+]

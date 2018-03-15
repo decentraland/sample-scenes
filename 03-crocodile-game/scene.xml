@@ -1,0 +1,25 @@
+<a-scene>
+  <a-system position="0 0 0" src="scene.js">
+    <a-obj-model position="5 0 5"  scale="0.3 0.3 0.3"  rotation="0 0 0"  obj-model="obj:models/base.obj; mtl:models/base.mtl" sound="src: url(sounds/carnivalrides.ogg); autoplay: true; loop: true; position: true; volume: 0.3"></a-obj-model>
+    <a-obj-model id="play_button" position="5 0 5"  scale="0.3 0.3 0.3"  rotation="0 0 0"  obj-model="obj:models/button.obj; mtl:models/button.mtl"></a-obj-model>
+    <a-obj-model id="croc_0" position="5 0 5"  scale="0.3 0.3 0.3"  rotation="0 0 0"  obj-model="obj:models/croc0.obj; mtl:models/croc0.mtl"></a-obj-model>
+    <a-obj-model id="croc_1" position="5 0 5"  scale="0.3 0.3 0.3"  rotation="0 0 0"  obj-model="obj:models/croc0_001.obj; mtl:models/croc0.mtl"></a-obj-model>
+    <a-obj-model id="croc_2" position="5 0 5"  scale="0.3 0.3 0.3"  rotation="0 0 0"  obj-model="obj:models/croc0_002.obj; mtl:models/croc0.mtl"></a-obj-model>
+    <a-obj-model id="croc_3" position="5 0 5"  scale="0.3 0.3 0.3"  rotation="0 0 0"  obj-model="obj:models/croc0_003.obj; mtl:models/croc0.mtl"></a-obj-model>
+    <a-obj-model id="croc_4" position="5 0 5"  scale="0.3 0.3 0.3"  rotation="0 0 0"  obj-model="obj:models/croc0_004.obj; mtl:models/croc0.mtl"></a-obj-model>
+    <a-obj-model id="game_over" position="5 0 5"  scale="0.3 0.3 0.3"  rotation="0 0 0"  obj-model="obj:models/game_over.obj; mtl:models/game_over.mtl" visible="false"></a-obj-model>
+    <a-obj-model id="instructions" position="5 0 5"  scale="0.3 0.3 0.3"  rotation="0 0 0"  obj-model="obj:models/instructions.obj; mtl:models/instructions.mtl" visible="false"></a-obj-model>
+    <a-obj-model id="notice" position="5 0 5"  scale="0.3 0.3 0.3"  rotation="0 0 0"  obj-model="obj:models/press_button.obj; mtl:models/press_button.mtl"></a-obj-model>
+    <a-obj-model position="5 0 5"  scale="0.3 0.3 0.3"  rotation="0 0 0"  obj-model="obj:models/separator.obj; mtl:models/separator.mtl"></a-obj-model>
+    <a-obj-model position="5 0 5"  scale="0.3 0.3 0.3"  rotation="0 0 0"  obj-model="obj:models/separator_001.obj; mtl:models/separator_001.mtl"></a-obj-model>
+    <a-obj-model position="5 0 5"  scale="0.3 0.3 0.3"  rotation="0 0 0"  obj-model="obj:models/separator_002.obj; mtl:models/separator_002.mtl"></a-obj-model>
+    <a-obj-model position="5 0 5"  scale="0.3 0.3 0.3"  rotation="0 0 0"  obj-model="obj:models/separator_003.obj; mtl:models/separator_003.mtl"></a-obj-model>
+    <a-obj-model position="5 0 5"  scale="0.3 0.3 0.3"  rotation="0 0 0"  obj-model="obj:models/separator_004.obj; mtl:models/separator_004.mtl"></a-obj-model>
+    <a-obj-model position="5 0 5"  scale="0.3 0.3 0.3"  rotation="0 0 0"  obj-model="obj:models/separator_005.obj; mtl:models/separator_005.mtl"></a-obj-model>
+    <a-obj-model position="5 0 5"  scale="0.3 0.3 0.3"  rotation="0 0 0"  obj-model="obj:models/side.obj; mtl:models/side.mtl"></a-obj-model>
+    <a-obj-model position="5 0 5"  scale="0.3 0.3 0.3"  rotation="0 0 0"  obj-model="obj:models/side2.obj; mtl:models/side2.mtl"></a-obj-model>
+    <a-obj-model position="5 0 5"  scale="0.3 0.3 0.3"  rotation="0 0 0"  obj-model="obj:models/subtitle.obj; mtl:models/subtitle.mtl"></a-obj-model>
+    <a-obj-model position="5 0 5"  scale="0.3 0.3 0.3"  rotation="0 0 0"  obj-model="obj:models/title.obj; mtl:models/title.mtl"></a-obj-model>
+  </a-system>
+</a-scene>
+

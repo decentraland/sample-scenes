@@ -1,0 +1,28 @@
+{
+  "display": {
+    "title": "crocs_game",
+    "favicon": "favicon_asset"
+  },
+  "owner": "",
+  "contact": {
+    "name": "Dani",
+    "email": ""
+  },
+  "main": "scene.xml",
+  "tags": [],
+  "scene": {
+    "parcels": ["200,10", "200,11"],
+    "base": "200,10"
+  },
+  "communications": {
+    "type": "webrtc",
+    "signalling": "https://signalling-01.decentraland.org"
+  },
+  "policy": {
+    "contentRating": "E",
+    "fly": true,
+    "voiceEnabled": true,
+    "blacklist": [],
+    "teleportPosition": ""
+  }
+}

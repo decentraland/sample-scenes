@@ -6,10 +6,11 @@ Any of these scenes can be explored using version 0.6.3 of the Decentraland CLI 
 
 ## Scenes
 
-Static content scene (gltf content, boxes)
-Move things around (roller coaster sample)
-Interactive version (event handler) - ping Agus
-Skeleton animation sample - ping Agus
-Video support sample (play, pause, volume) - ping Michal
-Game play example
-Multi-user example (experimental)
+01-static-scene
+02-dynamic-animation
+03-interactive-door
+04-skeletal-animation
+05-video-support
+06-simple-game
+07-ai-game-structure
+08-multiuser-EXPERIMENTAL

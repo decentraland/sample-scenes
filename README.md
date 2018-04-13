@@ -6,7 +6,10 @@ Any of these scenes can be explored using version 0.6.3 of the Decentraland CLI 
 
 ## Scenes
 
-1.  [Static scene with an object](./01-static-with-object): A scene comprised of just an object
-1.  [Dynamic scene using jsx](./02-using-jsx): A scene using typescript and JSX
-1.  [Sample crocodile game](./03-crocodile-game): A simple "Whac-A-Mole" kind of game
-1.  [Remote scene](./04-remote-scene): A scene that gets streamed from a remote server
+Static content scene (gltf content, boxes)
+Move things around (roller coaster sample)
+Interactive version (event handler) - ping Agus
+Skeleton animation sample - ping Agus
+Video support sample (play, pause, volume) - ping Michal
+Game play example
+Multi-user example (experimental)

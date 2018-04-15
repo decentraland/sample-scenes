@@ -3,7 +3,3 @@ The interactive door shows how to handle reticle click input events from the use
 Once you've got the CLI installed, to view the scene, you only need to type `dcl preview` at the command prompt. It will open the scene in a new browser tab automatically.
 
 You can learn more about handling user inputs in our documentation: https://docs.decentraland.org/docs
-
-```
-https://github.com/decentraland/client-server-example
-```

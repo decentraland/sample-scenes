@@ -7,7 +7,7 @@ export default class SharkAnimation extends Component {
     };
 
     async componentDidMount() {
-        this.eventSubscriber.on(`muhshark_click`, () => this.clickedOnShark());
+        this.eventSubscriber.on(`supershark_click`, () => this.clickedOnShark());
     }
 
     clickedOnShark() {

@@ -1,3 +1,4 @@
+/*
 import { createElement, ISimplifiedNode } from "metaverse-api";
 import { CrocDef } from "./CrocDef";
 
@@ -12,13 +13,6 @@ export function renderEntities() {
     return Array.from(gameEntities.values()).map($ => $.render());
 }
 
-/*
-export function tick() {
-    let frameTime = performance.now();
-    gameEntities.forEach($ => $.update(frameTime));
-}
-//*/
-
 export function setupGame() {
     let count = 10;
 
@@ -28,5 +22,13 @@ export function setupGame() {
         gameEntities.add(aCroc);
     }
 
-    //tick();
+    setInterval(() => tick(), 3000);
 }
+
+function tick() {
+    const frameTime = performance.now();
+    for (let croc of gameEntities) {
+        croc.update(frameTime);
+    }
+}
+*/

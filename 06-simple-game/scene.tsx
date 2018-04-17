@@ -1,32 +1,32 @@
-import { Component, createElement, ISimplifiedNode } from "metaverse-api";
-import { CrocDef } from "./src/CrocDef";
+import { Component, createElement, WebWorkerTransport } from "metaverse-api";
+import { IEntity, setupGame } from "./src/game";
 
-//import { renderEntities, setupGame } from "./src/game";
-
-export default class CrocsGame extends Component {
+export class ClientBridge extends Component {
     state = {
-        gameEntities: Array() as ISimplifiedNode[]
+        gameEntities: new Set<IEntity>()
     };
 
-    componentDidMount() {
-        let count = 10;
+    public getEntities = () => {
+        return this.state.gameEntities;
+    };
 
-        while (count--) {
-            let crocViz = <a-gltf-model src="models/croc.gltf" />;
-            let aCroc = new CrocDef(crocViz);
-            this.state.gameEntities.push(aCroc.getJsx());
-        }
-
+    public addEntity = (entity: IEntity) => {
+        this.state.gameEntities.add(entity);
         this.setState({ gameEntities: this.state.gameEntities });
+    };
+
+    private renderEntities() {
+        return Array.from(this.state.gameEntities.values()).map($ => $.render());
     }
 
     async render() {
-        return <a-scene>{this.state.gameEntities}</a-scene>;
-        //return (<a-scene></a-scene>);
+        return <a-scene>{this.renderEntities()}</a-scene>;
     }
 }
 
 {
+    const theGameBridge = new ClientBridge(WebWorkerTransport(self as any));
+
     // kick off the game.
-    //setupGame(CrocsGame.setState);
+    setupGame(theGameBridge);
 }

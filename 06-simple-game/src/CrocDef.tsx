@@ -1,6 +1,7 @@
 import { createElement, ISimplifiedNode } from "metaverse-api";
+import { IEntity } from "./game";
 
-export class CrocDef {
+export class CrocDef implements IEntity {
     position = {
         x: Math.random() * 10,
         y: Math.random() * 10,
@@ -15,9 +16,14 @@ export class CrocDef {
         this.wrappedViz = wrappedViz;
     }
 
-    getJsx(): ISimplifiedNode {
+    update(frameTime: number): void {
+        this.lastTime = frameTime;
+        this.position.y++;
+    }
+
+    render(): ISimplifiedNode {
         return (
-            <a-entity position={this.position} transition={{ position: { duration: 5000, timing: "linear" } }}>
+            <a-entity position={this.position} transition={{ position: { duration: 1000 / 16 } }}>
                 {this.wrappedViz}
             </a-entity>
         );

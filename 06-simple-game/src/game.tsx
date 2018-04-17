@@ -1,34 +1,27 @@
-/*
 import { createElement, ISimplifiedNode } from "metaverse-api";
 import { CrocDef } from "./CrocDef";
+import { ClientBridge } from "../scene";
 
 export interface IEntity {
     update(deltaTime: number): void;
     render(): ISimplifiedNode;
 }
 
-export const gameEntities = new Set<IEntity>();
-
-export function renderEntities() {
-    return Array.from(gameEntities.values()).map($ => $.render());
-}
-
-export function setupGame() {
+export function setupGame(theGameBridge: ClientBridge) {
     let count = 10;
 
     while (count--) {
         const crocViz = <a-gltf-model src="models/croc.gltf" />;
         const aCroc = new CrocDef(crocViz);
-        gameEntities.add(aCroc);
+        theGameBridge.addEntity(aCroc);
     }
 
-    setInterval(() => tick(), 3000);
+    setInterval(() => tick(theGameBridge), 3000);
 }
 
-function tick() {
+function tick(theGameBridge: ClientBridge) {
     const frameTime = performance.now();
-    for (let croc of gameEntities) {
+    for (let croc of theGameBridge.getEntities()) {
         croc.update(frameTime);
     }
 }
-*/

@@ -2,7 +2,7 @@
 
 This document contains examples of scenes to be used as a guide when building your own.
 
-Any of these scenes can be explored using version 0.6.3 of the Decentraland CLI and running `dcl preview` on each subfolder
+Any of these scenes can be explored using version 1.0.0 of the Decentraland CLI and running `dcl preview` on each subfolder
 
 ## Scenes
 

@@ -1,6 +1,6 @@
-import { Component, createElement } from "metaverse-api";
+import { createElement, ScriptableScene } from "metaverse-api";
 
-export default class SharkAnimation extends Component {
+export default class SharkAnimation extends ScriptableScene {
     state = {
         bitestate: false,
         dancestate: false
@@ -16,8 +16,8 @@ export default class SharkAnimation extends Component {
 
     async render() {
         return (
-            <a-scene>
-                <a-gltf-model
+            <scene>
+                <gltf-model
                     id="supershark"
                     position={{ x: 5, y: 3, z: -5 }}
                     scale={0.5}
@@ -34,7 +34,7 @@ export default class SharkAnimation extends Component {
                               ]
                     }
                 />
-            </a-scene>
+            </scene>
         );
     }
 }

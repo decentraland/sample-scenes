@@ -1,7 +1,7 @@
-import { Component, createElement, WebWorkerTransport } from "metaverse-api";
+import { ScriptableScene, createElement, WebWorkerTransport } from "metaverse-api";
 import { IEntity, setupGame } from "./src/game";
 
-export class ClientBridge extends Component {
+export class ClientBridge extends ScriptableScene {
     state = {
         gameEntities: new Set<IEntity>()
     };
@@ -20,7 +20,7 @@ export class ClientBridge extends Component {
     }
 
     async render() {
-        return <a-scene>{this.renderEntities()}</a-scene>;
+        return <scene>{this.renderEntities()}</scene>;
     }
 }
 

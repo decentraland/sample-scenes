@@ -11,7 +11,7 @@ export function setupGame(theGameBridge: ClientBridge) {
     let count = 10;
 
     while (count--) {
-        const crocViz = <a-gltf-model src="models/croc.gltf" />;
+        const crocViz = <gltf-model src="models/croc.gltf" />;
         const aCroc = new CrocDef(crocViz);
         theGameBridge.addEntity(aCroc);
     }

@@ -23,9 +23,9 @@ export class CrocDef implements IEntity {
 
     render(): ISimplifiedNode {
         return (
-            <a-entity position={this.position} transition={{ position: { duration: 1000 / 16 } }}>
+            <entity position={this.position} transition={{ position: { duration: 1000 / 16 } }}>
                 {this.wrappedViz}
-            </a-entity>
+            </entity>
         );
     }
 }

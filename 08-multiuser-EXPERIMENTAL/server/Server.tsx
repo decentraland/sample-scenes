@@ -1,37 +1,35 @@
-import { static as serveStatic } from 'express'
-import { createServer } from 'http'
-import { Server as WebSocketServer } from 'ws'
+import { createServer } from "http";
+import { Server as WebSocketServer } from "ws";
 
-import { connectedClients } from './ConnectedClients'
-import { WebSocketTransport } from 'metaverse-api'
-import RemoteScene from './RemoteScene'
+import { connectedClients } from "./ConnectedClients";
+import { WebSocketTransport } from "metaverse-api";
+import RemoteScene from "./RemoteScene";
 
-const express = require('express')
-const cors = require('cors')
+const express = require("express");
+const cors = require("cors");
 
-const app = express()
+const app = express();
 
-app.use(cors())
-app.use(serveStatic('client'))
+app.use(cors());
 
-const server = createServer(app)
-const wss = new WebSocketServer({ server })
+const server = createServer(app);
+const wss = new WebSocketServer({ server });
 
-wss.on('connection', function connection(ws, req) {
-  const client = new RemoteScene(WebSocketTransport(ws))
+wss.on("connection", function connection(ws, req) {
+  const client = new RemoteScene(WebSocketTransport(ws));
 
-  client.on('error', (err: Error) => {
-    console.error(err)
-    ws.close()
-  })
+  client.on("error", (err: Error) => {
+    console.error(err);
+    ws.close();
+  });
 
-  connectedClients.add(client)
+  connectedClients.add(client);
 
-  ws.on('close', () => connectedClients.delete(client))
+  ws.on("close", () => connectedClients.delete(client));
 
-  console.log(`Client connected at ${req.connection.remoteAddress}`)
-})
+  console.log(`Client connected at ${req.connection.remoteAddress}`);
+});
 
 server.listen(8087, function listening() {
-  console.log(`Listening on 8087`)
-})
+  console.log(`Listening on 8087`);
+});

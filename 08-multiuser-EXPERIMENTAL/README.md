@@ -24,6 +24,8 @@ NOTE: edit the `scene.json` file to update the _websocket port_ to point at your
 
 Then, once the websocket server is up and the scene is pointed properly at it, fire up the preview like normal
 
+**Previewing the scene**
+
 _from the scene directory:_
 
 ```

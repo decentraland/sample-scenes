@@ -6,7 +6,7 @@ export default class SharkAnimation extends ScriptableScene {
         dancestate: false
     };
 
-    async componentDidMount() {
+    async sceneDidMount() {
         this.eventSubscriber.on(`supershark_click`, () => this.clickedOnShark());
     }
 

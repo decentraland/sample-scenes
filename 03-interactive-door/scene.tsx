@@ -5,7 +5,7 @@ export default class HouseScene extends ScriptableScene {
         isDoorClosed: false
     };
 
-    componentDidMount() {
+    sceneDidMount() {
         this.eventSubscriber.on("door_click", () => {
             this.setState({ isDoorClosed: !this.state.isDoorClosed });
         });

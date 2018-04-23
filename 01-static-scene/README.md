@@ -1,7 +1,5 @@
 # Static Scene
 
-This scene is completely static. We've laid out a sample space to show off how you can use a project from blender or a resource like [sketchfab.com](https://sketchfab.com) to build your Decentraland scene.
+This is an example of a completely static scene. We've designed this example to demonstrate how you can use models  from blender or a resource like [sketchfab.com](https://sketchfab.com/) to build a simple, three-dimensional environment in your Decentraland scene.
 
-Once you've got the CLI installed, to view the scene, you only need to switch to that directory and type `dcl preview` at the command prompt. It will make sure any dependencies are installed and then open the scene in a new browser tab automatically.
-
-You can learn more about the different file type support in our documentation: [https://docs.decentraland.org/docs](https://docs.decentraland.org/docs)
+Once you've installed the CLI, download this example and navigate to its directory from your terminal or command prompt. Run `dcl preview` to launch a new browser tab containing the scene.

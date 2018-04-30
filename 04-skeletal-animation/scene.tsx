@@ -19,7 +19,7 @@ export default class SharkAnimation extends ScriptableScene {
             <scene>
                 <gltf-model
                     id="supershark"
-                    position={{ x: 5, y: 3, z: -5 }}
+                    position={{ x: 5, y: 1.5, z: -5 }}
                     scale={0.5}
                     src="models/shark_anim.gltf"
                     skeletalAnimation={
@@ -33,6 +33,12 @@ export default class SharkAnimation extends ScriptableScene {
                                   { clip: "shark_skeleton_swim", weight: 1.0, playing: true }
                               ]
                     }
+                />
+                <gltf-model
+                    position={{ x: 5.01, y: 0, z: -5.01 }}
+                    scale={0.48}
+                    src="models/Underwater_Example.gltf"
+                    id="Forest"
                 />
             </scene>
         );

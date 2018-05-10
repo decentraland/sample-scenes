@@ -1,4 +1,3 @@
 <scene>
     <gltf-model position="10 0 -1" scale="0.42 0.42 0.42" src="models/Forest/Forest_20x20.gltf" id="Forest"></gltf-model>
-    <!--<obj-model position="10 0 0" scale="0.5 0.5 0.5" src="models/Forest/Forest_10x10.obj" mtl="models/Forest/Forest_10x10.mtl" id="Forest"></obj-model>-->
 </scene>

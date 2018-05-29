@@ -1,8 +1,19 @@
 # Decentraland Sample Scenes
 
-This document contains examples of scenes to be used as a guide when building your own.
+Hello, and welcome to Decentraland’s interactive experience starter kits!
 
-Any of these scenes can be explored using version 1.0.0 of the Decentraland CLI and running `dcl preview` on each subfolder
+This is a directory of example scenes for you to use as a guide when building your own experiences to host on your LAND.
+
+All of these scenes can be explored using version 1.0.0 of the Decentraland CLI by running dcl preview on each subfolder.
+
+To get up and running with the CLI, read our Quick [Start Guide](https://docs.decentraland.org/docs/sdk-quick-start-guide).
+
+## How to use these examples
+
+After you have installed the CLI according to the steps outlined in the Quick Start Guide, simply download the scene example you’re interested in, navigate to the example’s directory in your terminal, and run `dcl preview`.
+
+This will first ensure that you have all of the required dependencies, and then launch the scene in a new browser tab.
+
 
 ## Scenes
 

@@ -6,4 +6,4 @@ In your scenes, you can load up an interactive GLTF model and trigger its animat
 
 Once you've got the CLI installed, to view the scene, you only need to switch to that directory and type `dcl preview` at the command prompt. It will make sure any dependencies are installed and then open the scene in a new browser tab automatically.
 
-You can learn more about skeletal animation support in our documentation: https://docs.decentraland.org/docs
+You can learn more about skeletal animation support in our documentation: https://docs.decentraland.org/

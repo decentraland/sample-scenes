@@ -9,7 +9,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "metaverse-api": "^3.1.0",
-    "typescript": "^2.7.2"
+    "metaverse-api": "^4.0.1",
+    "typescript": "^2.9.2"
   }
 }

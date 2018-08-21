@@ -11,24 +11,24 @@ This is an example of a completely static scene. We've laid out a sample space t
 
 ### Dynamic Animation
 
-With this Dynamic Animation, we're demonstrating how to employ simple data binding to objects in your scene. [Translation, rotation, and scale]({{ site.baseurl }}{% post_url /sdk-reference/2018-01-21-scene-content-guide %}) are all attributes you can bind to state properties. [Link](https://github.com/decentraland/sample-scene-dynamic-animation)
+With this Dynamic Animation, we're demonstrating how to employ simple data binding to objects in your scene. Translation, rotation, and scale are all attributes you can bind to state properties. [Link](https://github.com/decentraland/sample-scene-dynamic-animation)
 
 ### Interactive Content
 
 
-This simple example shows a scene that you can interact with by opening and closing a door. Clicking the door creates an [event]({{ site.baseurl }}{% post_url /sdk-reference/2018-01-03-event-handling %}), which changes the scene's state. The scene's state then changes the rotation of the door, which rotates smoothly thanks to a transition.
+This simple example shows a scene that you can interact with by opening and closing a door. Clicking the door creates an event, which changes the scene's state. The scene's state then changes the rotation of the door, which rotates smoothly thanks to a transition.
 [Link](https://github.com/decentraland/sample-scene-script)
 
 
 ### Skeletal Animations
 
-In your scenes, you can load up an interactive [GLTF model]({{ site.baseurl }}{% post_url /sdk-reference/2018-01-21-scene-content-guide %}) and trigger its animations. This is an example of how to do that. [Link](https://github.com/decentraland/sample-scene-skeletal-animation)
+In your scenes, you can load up an interactive GLTF model and trigger its animations. This is an example of how to do that. [Link](https://github.com/decentraland/sample-scene-skeletal-animation)
 
 ## Intermediate samples
 
 ### Sound Support
 
-This example features [sound]({{ site.baseurl }}{% post_url /sdk-reference/2018-01-21-scene-content-guide %}) coming out of an entity, notice how the volume diminishes relative to distance from it. It also includes an animated GLTF object and a floor that randomly changes color. [Link](https://github.com/decentraland/sample-scene-sound-support)
+This example features sound coming out of an entity, notice how the volume diminishes relative to distance from it. It also includes an animated GLTF object and a floor that randomly changes color. [Link](https://github.com/decentraland/sample-scene-sound-support)
 
 ### Video Support
 

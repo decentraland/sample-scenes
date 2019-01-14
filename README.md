@@ -1,146 +1,236 @@
-# Decentraland Sample Scenes
-
 To get you up and running, and to illustrate what kind of experiences you can build using the SDK, we’ve put together some code and scene examples.
 
-## Beginner samples
+Some of these scenes feature a link to a version of the scene that's deployed on a remote server. There you can interact with it just as if you were running `dcl start` locally.
 
-
-### Static Scene
-
-This is an example of a completely static scene. We've laid out a sample space to show off how you can use a layout from blender or a resource like [Sketchfab](https://sketchfab.com/) to build your first static Decentraland scene.
-
-[code](https://github.com/decentraland/sample-scene-static)
-
-[explore the scene](https://dcl-project-aobsbnmsdl.now.sh/?position=0%2C-1)
-
-### Dynamic Animation
-
-With this Dynamic Animation, we're demonstrating how to employ simple data binding to objects in your scene. Translation, rotation, and scale are all attributes you can bind to state properties.
-
-[code](https://github.com/decentraland/sample-scene-dynamic-animation)
-
-[explore the scene](https://dcl-project-fkmccoyvhb.now.sh/?position=0%2C-1)
-
-### Interactive Content
-
-
-This simple example shows a scene that you can interact with by opening and closing a door. Clicking the door creates an event, which changes the scene's state. The scene's state then changes the rotation of the door, which rotates smoothly thanks to a transition.
-
-
-[code](https://github.com/decentraland/sample-scene-script)
-
-[explore the scene](https://dcl-project-inksbqgcjj.now.sh/?position=-41%2C-113)
-
-
-### Skeletal Animations
-
-In your scenes, you can load up an interactive GLTF model and trigger its animations. This is an example of how to do that. 
-
-[code](https://github.com/decentraland/sample-scene-skeletal-animation)
-
-[explore the scene](https://dcl-project-tiroqwvfop.now.sh/?position=0%2C1)
-
+## Static XML Scenes
 
 #### Static XML Scene
 
-This is an example of a completely static scene. It's built entirely using XML, which makes it easier to write and edit, but doesn't support any interactions with the user.
+A completely static scene. It's built entirely using XML, which makes it easier to write and edit, but doesn't support any changes over time or interactions with the user.
+
 
 [Code](https://github.com/decentraland/sample-scene-static-xml)
 
-## Intermediate samples
 
-### Sound Support
+## Essentials
 
-This example features sound coming out of an entity, notice how the volume diminishes relative to distance from it. It also includes an animated GLTF object and a floor that randomly changes color.
+#### Hypno wheels
 
-[code](https://github.com/decentraland/sample-scene-sound-support)
+This simple scene features a couple of wheels that you can spin by clicking them. 
 
-[explore the scene](https://dcl-project-lolxizhsmy.now.sh/?position=-1%2C-1)
+- rotate an entity
+- glTF models
+- click events
+- textures
+- custom components 
+- component groups
 
+![](/images/media/example-hypno-wheel.png)
 
-#### Jukebox: Buttons and Sound
+[Code](https://github.com/decentraland-scenes/Hypno-wheels)
 
-This example, that's described in greater detail in a [video tutorial](https://steemit.com/tutorial/@hardlydifficult/decentraland-tutorial-creating-a-music-jukebox), you operate a jukebox. Each button plays a different song. Buttons are animated, and clicking on one raises any others that were previously clicked.
+[Explore the scene](https://hypno-wheels-owyfnqfimw.now.sh/?position=0%2C-1)
 
-[code](https://github.com/decentraland/sample-scene-jukebox)
+#### Shark animation
 
-[explore the scene](https://dcl-project-nvahvjzeiz.now.sh/?position=42%2C42)
+This simple scene shows how to add animations to a `GLTFComponent` and handle click events.
 
-### Video Support
+- glTF models
+- animations
+- click events
 
-In this example, you can interact with two video players. One loads the video company into the scene's assets, the other streams it from an external source. You can also pause, stop and change the volume of the video players.
+![](/images/media/example-shark-animation.png)
 
-[code](https://github.com/decentraland/sample-scene-video-support)
+[Code](https://github.com/decentraland-scenes/Shark-animation)
 
-[explore the scene](https://dcl-project-ffueiuubku.now.sh/?position=0%2C-1)
+[Explore the scene](https://shark-animation-xriykgapld.now.sh/)
 
+#### Open the door
 
+A simple interactive scene with a door that can be opened and closed.
 
-#### Multiplayer Content
+- `Slerp()` function for rotation
+- click events
+- materials
+- parent entities
+- custom components 
+- component groups
 
-In this example, based on the door example in the beginner samples, you interact with a door by opening and closing it, while another player is in the same room seeing the door's state changes. This simple example is built to give you a glimpse into how a multi-user environment works where multiple users interact with the same entities.
+![](/images/home/door.png)
 
-[Code](https://github.com/decentraland/sample-scene-server)
+[Code](https://github.com/decentraland-scenes/Open-door)
 
-[Explore the scene](https://dcl-project-fprfrtlboa.now.sh/?position=0%2C0)
+[Explore the scene](https://open-door-gssoyhoyrt.now.sh)
 
-Note: A similar sample is discussed in greater detail in a [blogpost](https://blog.decentraland.org/sdk-highlight-building-an-underwater-landscape-5bfcce73ff35).
+#### Sliding door
 
+A simple interactive scene with a two-sided door that can be opened by clicking.
 
-#### Dynamic number of entities
+- `Lerp()` function for moving
+- click events
+- materials
+- parent entities
+- custom components 
+- component groups
 
-In this example, that's described in greater detail in a [blogpost](https://blog.decentraland.org/developer-tutorial-creating-a-dynamic-flock-of-hummingbirds-8c2cd41f8296), a new bird appears and starts flying randomly around the scene each time you click on a tree. It's a good example of how to build multiple entities from an array and of how to handle 3D model animations.
+![](/images/media/example-sliding-doors.png)
 
-[code](https://github.com/decentraland/sample-scene-array-of-entities/blob/master/README.md)
+[Code](https://github.com/decentraland-scenes/Sliding-door)
 
-[explore the scene](https://dcl-project-xdoolmuwqt.now.sh/?position=0%2C-1)
+[Explore the scene](https://slidingdoor-fmydyuprjl.now.sh)
 
+#### Jukebox
 
-## Advanced samples
+A scene where you can play different songs by pressing buttons on a jukebox.
 
-#### Simple Memory Game
+- audio
+- glTF models
+- `Lerp()` function for moving
+- click events
+- materials
+- parent entities
+- custom components 
+- component groups
 
-In this example, that's described in greater detail in a [blogpost](https://blog.decentraland.org/building-a-memory-game-using-decentralands-sdk-87ee35968f8d), you play with a "Simon Says" game. This game is a good example of how to add more complex logic into a scene and how to change its state based on how the user interacts with it.
+![](/images/media/example-jukebox.png)
 
-[code](https://github.com/decentraland/sample-scene-memory-game)
-
-[explore the scene](https://dcl-project-asliohkpyt.now.sh/?position=0%2C0)
+[Code](https://github.com/decentraland-scenes/Jukebox)
 
 <!--
-#### Pay to open
-
-In this example, based on the door example in the beginner samples, you're only allowed to open the door if you've paid 10 MANA to a specific wallet. The sample shows how you can use the SDK to track blockchain transactions.
-
-[code](https://github.com/decentraland/sample-scene-payments)
-
+[Explore the scene]()
 -->
+
+#### Dance floor
+A scene with animations, sound, and tiles on the floor that randomly change color to the beat.
+
+- audio
+- glTF models
+- animations
+- materials
+- custom components 
+- component groups
+
+![](/images/media/example-dance-floor.png)
+
+[Code](https://github.com/decentraland-scenes/Dance-floor)
+
+<!--
+[Explore the scene]()
+-->
+
+#### Memory game
+
+A Simon Says game, with click interactions and sequenced actions. The game generates a random sequence of colors and you must click buttons to match those.
+
+- glTF models
+- materials
+- click events
+- custom components 
+- component groups
+
+![](/images/media/example-memory-game.png)
+
+
+[Code](https://github.com/decentraland-scenes/Memory-game)
+
+<!--
+[Explore the scene]()
+-->
+
+## Movement
+
+#### Hummingbirds
+
+A scene where hummingbirds spawn when you click a tree. Each bird moves on its own to random positions.
+
+![](/images/home/hummingbirds.png)
+
+[Code](https://github.com/decentraland-scenes/Hummingbirds)
+
+[Explore the scene](https://hummingbirds-ujovmbtmui.now.sh)
+
+#### Gnark patrolling
+
+A scene that shows a character walking along a fixed path, using lerp over each segment of the path. If you approach it, it will switch to yelling at you.
+
+![](/images/media/example-gnark.png)
+
+[Code](https://github.com/decentraland-scenes/Gnark-patrol)
+
+[Explore the scene](https://gnark-patrol-azhbtehsge.now.sh)
+
+
+## Network connections
+
+#### Weather simulation
+
+A scene that checks a weather API for the weather in a location and displays that weather condition, showing rain, thunder or snowflakes
+Use real weather data from different locations by changing the coordinates, or change the value of the “fakeWeather” variable to see different weather conditions manifest.
+
+- Call external REST API
+
+![](/images/media/example-weather.png)
+
+[Code](https://github.com/decentraland-scenes/Weather-simulation)
+
+[Explore the scene](https://weather-yvahddfxgo.now.sh)
+
+#### Remote door
+
+A scene that uses a server and a REST API to sync a scene state amongst multiple users. It’s built around the basic “open the door” example.
+
+- Create a REST server
+- Call REST API
+
+![](/images/home/door.png)
+
+[Code](https://github.com/decentraland-scenes/Remote-door)
+
+[Explore the scene]()
+
+
+#### Remote mural
+
+A scene that uses a server and a REST API to sync a scene state amongst multiple users. You can paint pixels in a mural that other users can see. The colors of each pixel are stored in a remote server.
+
+- Create a REST server
+- Call REST API
+
+![](/images/media/example-remote-mural.png)
+
+
+[Code](https://github.com/decentraland-scenes/Remote-mural)
+
+[Explore the scene]()
+
+## Advanced
 
 #### Block Dog
 
-In this example, that's described in greater detail in a [video tutorial](https://steemit.com/tutorial/@hardlydifficult/decentraland-tutorial-basic-ai-with-block-dog), you control a pet dog. The dog has its own autonomous actions that it performs randomly. It also follows you around, sits when cicked and goes to drink when you click its bowl.
+A scene with a simple AI character. It randomly chooses what action to take: follow you, sit or remain idle. You can also tell it to sit or stand up by clicking it, or tell it to drink water by clicking its bowl.
 
-[code](https://github.com/decentraland/sample-scene-Block-Dog)
+![](/images/home/blockdog.png)
 
-[explore the scene](https://dcl-project-meybigwwvv.now.sh/?position=42%2C41)
+[Code](https://github.com/decentraland-scenes/Block-dog)
 
-#### Chess game
+[Explore the scene](https://blockdog-wtciaozdbo.now.sh/?position=0%2C0)
 
-This example, that's described in greater detail in a [blogpost](https://blog.decentraland.org/developer-tutorial-port-a-redux-chess-game-to-decentraland-49f509b2eba6), takes an existing 2D chess game and builds a 3D scene around it in decentraland. The game can only start when two players have accepted to join the game, and each can only interact with the scene when it's their turn.
+#### Tower defense game (WIP)
 
-[code](https://github.com/cazala/decentraland-redux-chess-app)
+A fully-fledged game where a random 2d path is generated along which enemies walk, and where traps are randomly placed. You need to activate the traps as the enemies advance along the path to kill them. It’s all about timing.
 
-#### Tower defense game
+![](/images/media/example-tower-defense.png)
 
-This example, that's described in greater detail in a [video tutorial](https://steemit.com/tutorial/@hardlydifficult/decentraland-tutorial-a-simple-tower-defense-game), shows a simple tower defense game. The game generates a random path, and places traps in random locations along that path. Then enemy entities are spawn and follow this path, unless you activate the traps to stop them. The game supports multiple players, has a scoreboard and has a reset button to restart the game at any time.
+[Code](https://github.com/decentraland-scenes/Tower-defense)
 
-[Code](https://github.com/decentraland/sample-scene-tower-defense-game)
+<!--
+[Explore the scene]()
+-->
 
-[Explore the scene](https://dcl-project-iavfhvaswv.now.sh/?position=0%2C-1)
+#### Castaway 2048 (WIP)
 
-#### Dog, cat, mouse, cheese
+A fully fledged game, based on the popular game 2048, where the values are represented by a series of gems of increasing values. Click and drag to displace the gems on the board and merge them into greater values till you reach 2048.
 
-This example, that's described in greater detail in a [video tutorial](https://steemit.com/tutorial/@hardlydifficult/decentraland-tutorial-dog-cat-mouse-cheese-using-a-fsm) shows how to build a more complex scene that involves predators and prays, which can interchangably be mice, cats or dogs. Each animal has a stack-based finite state machine (FSM) to manage its AI. Each animal uses the a\* path finding algorythm to find its way around obstacles and othe animals.
+![](/images/media/example-2048.png)
 
-[code](https://dcl-project-bfvkjmdtyf.now.sh)
-
-[explore the scene](https://dcl-project-bfvkjmdtyf.now.sh/?position=42%2C43)
+[Code](https://github.com/decentraland-scenes/Castaway-2048)
